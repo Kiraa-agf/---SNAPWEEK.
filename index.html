@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SNAPWEEK 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Nunito:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Menonaktifkan scroll */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://i.imgur.com/cT1CXS9.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      font-size: 2.5rem;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .sticker {
+      position: absolute;
+      width: 250px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .sticker:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Sticker khusus bawah: hanya scale tanpa geser */
+    .sticker-3 {
+      transition: scale 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .sticker-3:hover {
+      transform: scale(1.1);
+    }
+
+    /* Desktop layout - posisi lebih atas dan diatur segitiga */
+    .sticker-1 {
+      top: 70px;
+      left: 60%;
+    }
+
+    .sticker-2 {
+      top: 70px;
+      right: 5%;
+    }
+
+    .sticker-3 {
+      top: 220px;
+      right: 15%;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 600px) {
+      .sticker {
+        width: 65%;
+      }
+
+      .sticker-1 {
+        top: 55%;
+        left: 15%;
+      }
+
+      .sticker-2 {
+        top: 55%;
+        right: 15%;
+      }
+
+      .sticker-3 {
+        top: 74%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1></h1>
+
+  <a href="https://forms.gle/NT4jGyDDFETLmKvZ9" target="_blank">
+    <img class="sticker sticker-1" src="https://i.imgur.com/JbNvQ1L.png" alt="">
+  </a>
+
+  <a href="https://forms.gle/jBjBRc9wfdxHuHX38" target="_blank">
+    <img class="sticker sticker-2" src="https://i.imgur.com/n4wssxS.png" alt="">
+  </a>
+
+  <a href="https://forms.gle/NkSg849b5HFgirmE7" target="_blank">
+    <img class="sticker sticker-3" src="https://i.imgur.com/ZxbYSjA.png" alt="">
+  </a>
+
+</body>
+</html>
