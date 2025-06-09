@@ -10,7 +10,7 @@
       height: 100%;
       margin: 0;
       padding: 0;
-      overflow: hidden; /* Menonaktifkan scroll */
+      overflow: hidden;
     }
 
     body {
@@ -45,7 +45,6 @@
       box-shadow: 0 8px 12px rgba(0,0,0,0.3);
     }
 
-    /* Sticker khusus bawah: hanya scale tanpa geser */
     .sticker-3 {
       transition: scale 0.3s ease, box-shadow 0.3s ease;
     }
@@ -54,40 +53,45 @@
       transform: scale(1.1);
     }
 
-    /* Desktop layout - posisi lebih atas dan diatur segitiga */
+    /* Desktop Layout */
     .sticker-1 {
-      top: 70px;
-      left: 60%;
+      top: 50px;
+      left: 63%;
     }
 
     .sticker-2 {
-      top: 70px;
-      right: 5%;
+      top: 50px;
+      right: 4%;
     }
 
     .sticker-3 {
-      top: 220px;
-      right: 15%;
+      top: 190px;
+      right: 14%;
     }
 
-    /* Mobile layout */
+    /* Mobile Layout */
     @media (max-width: 600px) {
+      body {
+        background: url('https://i.imgur.com/qhWHg4H.jpeg') no-repeat center center fixed;
+        background-size: cover;
+      }
+
       .sticker {
         width: 65%;
       }
 
       .sticker-1 {
-        top: 55%;
-        left: 15%;
+        top: 58%;
+        left: 18%;
       }
 
       .sticker-2 {
-        top: 55%;
-        right: 15%;
+        top: 58%;
+        right: 18%;
       }
 
       .sticker-3 {
-        top: 74%;
+        top: 75%;
         left: 50%;
         transform: translateX(-50%);
       }
